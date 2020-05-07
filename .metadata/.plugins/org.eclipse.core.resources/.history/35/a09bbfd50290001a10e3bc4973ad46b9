@@ -1,0 +1,49 @@
+package com.ict.edu;
+
+public class Ex02 {
+	public static void main(String[] args) {
+		// if ~ else ~ : 조건식이 참일때 와 거짓일때 각각 나워서 처리한다.
+		// 형식 : if (조건식) {
+		//				조건식이 참일때 실행문장;
+		//				조건식이 참일때 실행문장;
+		//		  }else	{
+		//				조건식이 거짓일때 실행문장;
+		//				조건식이 거짓일때 실행문장;
+		//		  }
+		
+		//	int k1 이 60 이상이면 합격, 나머지는 불합격
+		String	str	=	"";
+		
+		int	k2 = 59;
+		
+		
+		System.out.println(k2 + "은 " + str + "입니다.");
+
+		// 홀수 짝수 판별 
+		int  k4 = 7;
+
+		System.out.println(k4 + "은 " + str + "입니다.");
+		
+		// 대소문자 판단  
+		char  k5 = 'G';
+
+		System.out.println(k5 + "은 " + str + "입니다.");
+
+		// 1 또는 3 이면 남자 , 아니면 여자 
+		int	k6 = 1;
+		
+		System.out.println(k6 + "은 " + str + "입니다.");
+		
+		// 근무시간이 8시간까지는 시간당 8590 이고
+		// 8시간을 초과한 시간 만큼은 1.5배 지급한다.
+		// 현재 근무시간은 10 이다.
+		// 얼마를 받아야 하는가?
+		int	time  = 10;
+		int	base  = 8590;
+		int	pay	  =	 0;
+
+		System.out.println("근무시간 "+ time + "시간의 급여는 "+ pay + "입니다.");
+		
+		
+	}
+}
