@@ -1,10 +1,10 @@
 class Ex14{
 	public static void main(String[] args)	{
 	
-		// ºñ±³¿¬»êÁö : >, <, >=, <=, ==, !=, 
-		// ºñ±³¿¬»êÀÚ¸¦ »ç¿ëÇÒ ¼ö ÀÖ´ÂÀÚ·áÇü : char. Á¤¼ö, ½Ç¼ö 
-		// booleanÇü °ú StringÀº ºñ±³¿¬»êÀ» ÇÏÁö ¾Ê´Â´Ù.
-		// ¿¬»ê °á°ú´Â ¹«Á¶°Ç booleanÇü (true, false) => Á¶°Ç½Ä¿¡ »ç¿ëµÈ´Ù.
+		// ë¹„êµì—°ì‚°ì§€ : >, <, >=, <=, ==, !=, 
+		// ë¹„êµì—°ì‚°ìžë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ”ìžë£Œí˜• : char. ì •ìˆ˜, ì‹¤ìˆ˜ 
+		// booleaní˜• ê³¼ Stringì€ ë¹„êµì—°ì‚°ì„ í•˜ì§€ ì•ŠëŠ”ë‹¤.
+		// ì—°ì‚° ê²°ê³¼ëŠ” ë¬´ì¡°ê±´ booleaní˜• (true, false) => ì¡°ê±´ì‹ì— ì‚¬ìš©ëœë‹¤.
 
 		int	su1	=	90;
 		int	su2	=	80;
@@ -18,21 +18,21 @@ class Ex14{
 		boolean result	=	false;
 
 		result		=	su1 > su2;
-		System.out.println("°á°ú : " + result);
+		System.out.println("ê²°ê³¼ : " + result);
 
 		result		=	su3 > su4;
-		System.out.println("°á°ú : " + result);
+		System.out.println("ê²°ê³¼ : " + result);
 
 		result		=	su5 > su6;
-		System.out.println("°á°ú : " + result);
+		System.out.println("ê²°ê³¼ : " + result);
 
 		result		=	su1 > su3;
-		System.out.println("°á°ú : " + result);
+		System.out.println("ê²°ê³¼ : " + result);
 
 		result		=	su1 > su5;
-		System.out.println("°á°ú : " + result);
+		System.out.println("ê²°ê³¼ : " + result);
 
 		result		=	su3 == su5;
-		System.out.println("°á°ú : " + result);
+		System.out.println("ê²°ê³¼ : " + result);
 	}
 }
