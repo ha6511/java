@@ -1,10 +1,10 @@
 class Ex10{
 	public static void main(String[] args){
 	
-		// Áõ°¨¿¬»êÀÚ : 1Áõ°¡ ¶Ç´Â 1°¨¼Ò ÇÏ´Â ¿¬»êÀÚ
-		// char,  Á¤¼öÇü, ½Ç¼öÇü¿¡ »ç¿ë°¡´É
-		// ++ º¯¼ö : ÇöÀç°ªÀ» ¸ÕÀú 1Áõ°¡ÇÏ°í ³ª¸ÓÁö ½ÇÇà
-		// º¯¼ö++  : ÇöÀç°ª °¡Áö°í ¿¬»ê ÈÄ ³ªÁß¿¡ 1Áõ°¡ 
+		// ì¦ê°ì—°ì‚°ìž : 1ì¦ê°€ ë˜ëŠ” 1ê°ì†Œ í•˜ëŠ” ì—°ì‚°ìž
+		// char,  ì •ìˆ˜í˜•, ì‹¤ìˆ˜í˜•ì— ì‚¬ìš©ê°€ëŠ¥
+		// ++ ë³€ìˆ˜ : í˜„ìž¬ê°’ì„ ë¨¼ì € 1ì¦ê°€í•˜ê³  ë‚˜ë¨¸ì§€ ì‹¤í–‰
+		// ë³€ìˆ˜++  : í˜„ìž¬ê°’ ê°€ì§€ê³  ì—°ì‚° í›„ ë‚˜ì¤‘ì— 1ì¦ê°€ 
 
 		int su1 = 10;
 		int su2 = 10;
@@ -16,3 +16,4 @@ class Ex10{
 		System.out.println(su2);
 	}
 }
+
