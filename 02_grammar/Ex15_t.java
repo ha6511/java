@@ -6,12 +6,13 @@ public class Ex15_t {
 		int	su2	=	7;
 		boolean	result	=	false;
 		
-		// AND ´Â false ¸¦ ¸¸³ª¸é °á°ú´Â false ÀÌ°í, µÚÀÇ Á¶°ÇÀº ¿¬»êÇÏÁö ¾Ê´Â´Ù.
+		// AND ëŠ” false ë¥¼ ë§Œë‚˜ë©´ ê²°ê³¼ëŠ” false ì´ê³ , ë’¤ì˜ ì¡°ê±´ì€ ì—°ì‚°í•˜ì§€ ì•ŠëŠ”ë‹¤.
 		result	=	((su1 = su1+2) < su2 ) && (su1 == (su2 = su2 + 5));
 		//                  12        7 
-		System.out.println("°á°ú = " + result);		//	false  
+		System.out.println("ê²°ê³¼ = " + result);		//	false  
 		System.out.println("su1 = " + su1); 		//	12
 		System.out.println("su2 = " + su2);			//	7
 		
 	}
 }
+
