@@ -1,65 +1,63 @@
 class Ex15{
 	public static void main(String[] args) {
 
-	// ³í¸®¿¬»êÀÚ : &&(AND, ³í¸®°ö), ||(OR, ³í¸®ÇÕ), !(MOT, ³í¸®ºÎÁ¤)
-	// ³í¸®¿¬»êÀÚÀÇ ´ë»ó(µé¾î¿À´Â Á¤º¸) : booleanÇü, ºñ±³¿¬»ê, ³í¸®¿¬»ê
-	// ³í¸®¿¬»êÀÇ °á°ú´Â booleanÇü, Áï Á¶°Ç½Ä¿¡ »ç¿ëµÈ´Ù.
+	// ë…¼ë¦¬ì—°ì‚°ì : &&(AND, ë…¼ë¦¬ê³±), ||(OR, ë…¼ë¦¬í•©), !(MOT, ë…¼ë¦¬ë¶€ì •)
+	// ë…¼ë¦¬ì—°ì‚°ìì˜ ëŒ€ìƒ(ë“¤ì–´ì˜¤ëŠ” ì •ë³´) : booleaní˜•, ë¹„êµì—°ì‚°, ë…¼ë¦¬ì—°ì‚°
+	// ë…¼ë¦¬ì—°ì‚°ì˜ ê²°ê³¼ëŠ” booleaní˜•, ì¦‰ ì¡°ê±´ì‹ì— ì‚¬ìš©ëœë‹¤.
 
-	// AND ( &&, ³í¸®°ö)
-	// ÁÖ¾îÁø Á¶°£ÀÌ ¸ğµÎ true ÀÏ¶¼ °á°ú´Â true
-	// ÁÖ¾îÁø Á¶°Çµé Áß false¸¦ ¸¸³ª¸é °á°ú´Â false
-	// false¸¦ ¸¸³ª¸é ÀÌÈÄ¿¬»êÀ» ÇÏÁö ¾ÊÀ½
-	// a >= 10 && a <= 20 ÀÇ ÀÇ¹Ì´Â a´Â 10ºÎÅÍ 20±îÁöÀÇ ¹üÀ§¸¦ ÀÇ¹ÌÇÑ´Ù.
+	// AND ( &&, ë…¼ë¦¬ê³±)
+	// ì£¼ì–´ì§„ ì¡°ê°„ì´ ëª¨ë‘ true ì¼ë–¼ ê²°ê³¼ëŠ” true
+	// ì£¼ì–´ì§„ ì¡°ê±´ë“¤ ì¤‘ falseë¥¼ ë§Œë‚˜ë©´ ê²°ê³¼ëŠ” false
+	// falseë¥¼ ë§Œë‚˜ë©´ ì´í›„ì—°ì‚°ì„ í•˜ì§€ ì•ŠìŒ
+	// a >= 10 && a <= 20 ì˜ ì˜ë¯¸ëŠ” aëŠ” 10ë¶€í„° 20ê¹Œì§€ì˜ ë²”ìœ„ë¥¼ ì˜ë¯¸í•œë‹¤.
 
 	int	su1	=	10;
 	int	su2	=	7;
 	boolean	result	=	false;
 
 	result	=	(su1 > 7 ) && (su2 >= 5);	//	true && true --> true 
-	System.out.println("°á°ú : " + result);
+	System.out.println("ê²°ê³¼ : " + result);
 
 	result	=	(su1 > 7 ) && (su2 <= 5);	//	true && false --> false 
-	System.out.println("°á°ú : " + result);
+	System.out.println("ê²°ê³¼ : " + result);
 
 	result	=	(su1 <= 7 ) && (su2 >= 5);	//	false && true --> false
-	System.out.println("°á°ú : " + result);
+	System.out.println("ê²°ê³¼ : " + result);
 
 	result	=	(su1 <= 7 ) && (su2 <= 5);	//	false && false --> false
-	System.out.println("°á°ú : " + result);
+	System.out.println("ê²°ê³¼ : " + result);
 
 	System.out.println("==========================================================================");
 
 	result	=	((su1 = su1+2) > su2 ) && (su1 == (su2 = su2 + 5));
-	System.out.println("°á°ú = " + result);
+	System.out.println("ê²°ê³¼ = " + result);
 	System.out.println("su1 = " + su1);
 	System.out.println("su2 = " + su2);
 	
 	System.out.println("==========================================================================");
 
-	// AND ´Â false ¸¦ ¸¸³ª¸é °á°ú´Â false ÀÌ°í, µÚÀÇ Á¶°ÇÀº ¿¬»êÇÏÁö ¾Ê´Â´Ù.
+	// AND ëŠ” false ë¥¼ ë§Œë‚˜ë©´ ê²°ê³¼ëŠ” false ì´ê³ , ë’¤ì˜ ì¡°ê±´ì€ ì—°ì‚°í•˜ì§€ ì•ŠëŠ”ë‹¤.
 	result	=	((su1 = su1+2) < su2 ) && (su1 == (su2 = su2 + 5));
-	System.out.println("°á°ú = " + result);
+	System.out.println("ê²°ê³¼ = " + result);
 	System.out.println("su1 = " + su1);
 	System.out.println("su2 = " + su2);
 	
 	System.out.println("==========================================================================");
 
 	su1 = 34;
-	//su1ÀÇ °ªÀÌ 20 ¿¡¼­ 30 »çÀÌÀÇ °ªÀÌ³ª?
+	//su1ì˜ ê°’ì´ 20 ì—ì„œ 30 ì‚¬ì´ì˜ ê°’ì´ë‚˜?
 	result = (su1 >= 20) && (su1 < 30);
-	System.out.println("°á°ú : " + result);
+	System.out.println("ê²°ê³¼ : " + result);
 
 	
 	System.out.println("==========================================================================");
 
-	// char c1ÀÌ ¼Ò¹®ÀÚ ÀÌ³Ä?
+	// char c1ì´ ì†Œë¬¸ì ì´ëƒ?
 	char	c1	=	'G';
 	result	=	(c1>= 97) && (c1 <= 122);
-	System.out.println("°á°ú :" + result);
+	System.out.println("ê²°ê³¼ :" + result);
 
 	result	=	(c1>= 'a') && (c1 <= 'z');
-	System.out.println("°á°ú :" + result);
-
-
+	System.out.println("ê²°ê³¼ :" + result);
 	}
 }
