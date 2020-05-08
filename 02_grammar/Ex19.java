@@ -30,3 +30,4 @@ public class Ex19 {
 		System.out.println("결과 : "+ pay );
 	}
 }
+
