@@ -1,13 +1,13 @@
 class Ex13{
 	public static void main(String[] args) {
 
-		// 2½Ã°£ 40ºĞ 30ÃÊ´Â ¸îÃÊÀÎ°¡?
+		// 2ì‹œê°„ 40ë¶„ 30ì´ˆëŠ” ëª‡ì´ˆì¸ê°€?
 		int	h	=	2;
 		int	m	=	40;
 		int	s	=	30;
 
 		int	result	=	h * 60 * 60 + m * 60 + s;
 
-		System.out.println(h + "½Ã°£ " + m + "ºĞ " + s + "ÃÊ´Â " + result + "ÃÊ ÀÔ´Ï´Ù."); 
+		System.out.println(h + "ì‹œê°„ " + m + "ë¶„ " + s + "ì´ˆëŠ” " + result + "ì´ˆ ì…ë‹ˆë‹¤."); 
 	}
 }
