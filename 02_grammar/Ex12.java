@@ -28,6 +28,5 @@ class	Ex12{
 
 		// 출력하기
 		System.out.println(time + "초는 " + h + "시 " + m + "분 " + s + "초");
-
 	}
 }
