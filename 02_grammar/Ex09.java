@@ -1,34 +1,35 @@
 class Ex09 {
 	public static void main(String[] args) {
-		// »ê¼ú¿¬»êÀÚ : +, -, *, /, %
-		// char, Á¤¼öÇü, ½Ç¼öÇü »ç¿ëÀÚ´Â 
+		// ì‚°ìˆ ì—°ì‚°ì : +, -, *, /, %
+		// char, ì •ìˆ˜í˜•, ì‹¤ìˆ˜í˜• ì‚¬ìš©ìëŠ” 
 		int s1 = 9;
 		int s2 = 4;
 		int res = 0;
 
 		res= s1+s2;
-		System.out.println("°á°ú : " + res);
+		System.out.println("ê²°ê³¼ : " + res);
 
 		res= s1-s2;
-		System.out.println("°á°ú : " + res);
+		System.out.println("ê²°ê³¼ : " + res);
 
 		res= s1*s2;
-		System.out.println("°á°ú : " + res);
+		System.out.println("ê²°ê³¼ : " + res);
 
-		// Á¤¼öÇüÀ¸·Î ¸¸µé¾î¼­ ¸ò¸Õ ³ª¿À´Â ¹æ¹ı 
+		// ì •ìˆ˜í˜•ìœ¼ë¡œ ë§Œë“¤ì–´ì„œ ëª«ë¨¼ ë‚˜ì˜¤ëŠ” ë°©ë²• 
 		res= s1/s2;
-		System.out.println("°á°ú : " + res);
+		System.out.println("ê²°ê³¼ : " + res);
 
 
-		// Á¤¼ö/Á¤¼ö = Á¤¼ö Áï ½Ç¼ö°ªÀÌ Á¤È®ÇÏ°Ô ³ª¿ÀÁö ¾ÊÀ½ 
+		// ì •ìˆ˜/ì •ìˆ˜ = ì •ìˆ˜ ì¦‰ ì‹¤ìˆ˜ê°’ì´ ì •í™•í•˜ê²Œ ë‚˜ì˜¤ì§€ ì•ŠìŒ 
 		double result1= s1/s2;
-		System.out.println("°á°ú : " + result1);
+		System.out.println("ê²°ê³¼ : " + result1);
 
-		// ½Ç¼öÇüÀ¸·Î ¸¸µé¾î¼­ ³ª¿À´Â ¹æ¹ı 
+		// ì‹¤ìˆ˜í˜•ìœ¼ë¡œ ë§Œë“¤ì–´ì„œ ë‚˜ì˜¤ëŠ” ë°©ë²• 
 		double result2= (double)(s1)/s2;
-		System.out.println("°á°ú : " + result2);
+		System.out.println("ê²°ê³¼ : " + result2);
 
 		res= s1%s2;
-		System.out.println("°á°ú : " + res);
+		System.out.println("ê²°ê³¼ : " + res);
 	}
 }
+
