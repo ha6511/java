@@ -2,25 +2,25 @@ package com.ict.edu;
 
 public class Ex07 {
 	public static void main(String[] args) {
-		// while ¹® : for ¹® °ú °°Àº ¹Ýº¹¹®
-		//	Çü½Ä1	:
-		//		ÃÊ±â½Ä
-		//		while(Á¶°Ç½Ä) {
-		//			Á¶°Ç½ÄÀÌ ÂüÀÏ¶§ ½ÇÇà;
-		//			Áõ°¨½Ä;
+		// while ë¬¸ : for ë¬¸ ê³¼ ê°™ì€ ë°˜ë³µë¬¸
+		//	í˜•ì‹1	:
+		//		ì´ˆê¸°ì‹
+		//		while(ì¡°ê±´ì‹) {
+		//			ì¡°ê±´ì‹ì´ ì°¸ì¼ë•Œ ì‹¤í–‰;
+		//			ì¦ê°ì‹;
 		//		}
-		//		while¹® ³¡À» ¸¸³ª¸é ¹«Á¶°Ç Á¶°Ç½ÄÀ¸·Î °¡¶ó.
+		//		whileë¬¸ ëì„ ë§Œë‚˜ë©´ ë¬´ì¡°ê±´ ì¡°ê±´ì‹ìœ¼ë¡œ ê°€ë¼.
 		//
-		//	Çü½Ä2	:
-		//		ÃÊ±â½Ä 
+		//	í˜•ì‹2	:
+		//		ì´ˆê¸°ì‹ 
 		//		while(true) {
-		//			if	(ºüÁ®³ª°¥ Á¶°Ç)		break;
-		//			Á¶°Ç½ÄÀÌ ÂüÀÏ¶§ ½ÇÇà;
-		//			Áõ°¨½Ä;
+		//			if	(ë¹ ì ¸ë‚˜ê°ˆ ì¡°ê±´)		break;
+		//			ì¡°ê±´ì‹ì´ ì°¸ì¼ë•Œ ì‹¤í–‰;
+		//			ì¦ê°ì‹;
 		//		}
-		//		while¹® ³¡À» ¸¸³ª¸é ¹«Á¶°Ç Á¶°Ç½ÄÀ¸·Î °¡¶ó.
+		//		whileë¬¸ ëì„ ë§Œë‚˜ë©´ ë¬´ì¡°ê±´ ì¡°ê±´ì‹ìœ¼ë¡œ ê°€ë¼.
 		
-		//	0 ~ 10 ±îÁö Ãâ·Â
+		//	0 ~ 10 ê¹Œì§€ ì¶œë ¥
 //		for (int i = 0; i < 11; i++) {
 //			System.out.print(i+ " ");
 //		}
@@ -43,8 +43,8 @@ public class Ex07 {
 //			System.out.println(k2 + " ");
 //		}
 
-		//	0 - 10 ±îÁö Â¦¼ö Ãâ·ÂÇÏ±â
-		System.out.println("\n====== 0 - 10 ±îÁö Â¦¼ö Ãâ·ÂÇÏ±â");
+		//	0 - 10 ê¹Œì§€ ì§ìˆ˜ ì¶œë ¥í•˜ê¸°
+		System.out.println("\n====== 0 - 10 ê¹Œì§€ ì§ìˆ˜ ì¶œë ¥í•˜ê¸°");
 		int i=0;
 		while (i<11) {
 			if	(i%2==0)	{
@@ -53,8 +53,8 @@ public class Ex07 {
 			i++;
 		}
 		
-		//	0 - 10 ±îÁö È¦¼ö Ãâ·ÂÇÏ±â
-		System.out.println("\n====== 0 - 10 ±îÁö È¦¼ö Ãâ·ÂÇÏ±â");
+		//	0 - 10 ê¹Œì§€ í™€ìˆ˜ ì¶œë ¥í•˜ê¸°
+		System.out.println("\n====== 0 - 10 ê¹Œì§€ í™€ìˆ˜ ì¶œë ¥í•˜ê¸°");
 		i=0;
 		while (i<11) {
 			if	(i%2==1)	{
@@ -63,8 +63,8 @@ public class Ex07 {
 			i++;
 		}
 		
-		//	0 ~ 50 ±îÁö 7ÀÇ ¹è¼ö Ãâ·ÂÇÏ±â  
-		System.out.println("\n====== 0 ~ 50 ±îÁö 7ÀÇ ¹è¼ö Ãâ·ÂÇÏ±â");
+		//	0 ~ 50 ê¹Œì§€ 7ì˜ ë°°ìˆ˜ ì¶œë ¥í•˜ê¸°  
+		System.out.println("\n====== 0 ~ 50 ê¹Œì§€ 7ì˜ ë°°ìˆ˜ ì¶œë ¥í•˜ê¸°");
 		i=0;
 		while (i<=50) {
 			if	(i%7==1)	{
@@ -74,15 +74,15 @@ public class Ex07 {
 		}
 	
 		// a ~ g 
-		System.out.println("\n====== a ~ g ¿·À¸·Î Ãâ·ÂÇÏ±â");
+		System.out.println("\n====== a ~ g ì˜†ìœ¼ë¡œ ì¶œë ¥í•˜ê¸°");
 		char ch = 'a';
 		while	(ch<='g')	{
 			System.out.print(ch + "\t");
 			ch++;
 		}
 		
-		// 5´Ü Ãâ·ÂÇÏ±â 
-		System.out.println("\n====== 5´Ü Ãâ·ÂÇÏ±â");
+		// 5ë‹¨ ì¶œë ¥í•˜ê¸° 
+		System.out.println("\n====== 5ë‹¨ ì¶œë ¥í•˜ê¸°");
 		i = 1;
 		while (i<10) {
 			System.out.println(5 + " * " + i + " = " + 5*i);
@@ -101,16 +101,14 @@ public class Ex07 {
 			System.out.println();
 			i++;
 		}
-		System.out.println("\n====== 0 ~ 10 ´©ÀûÇÕ°è");
+		System.out.println("\n====== 0 ~ 10 ëˆ„ì í•©ê³„");
 		
-		System.out.println("\n====== 0 ~ 10 È¦¼öÀÇ ÇÕ°è");
+		System.out.println("\n====== 0 ~ 10 í™€ìˆ˜ì˜ í•©ê³„");
 					
-		System.out.println("\n====== 0 ~ 10 Â¦¼öÀÇ ÇÕ°è");
+		System.out.println("\n====== 0 ~ 10 ì§ìˆ˜ì˜ í•©ê³„");
 
-		System.out.println("\n====== 0 ~ 10 È¦¼ö, Â¦¼ö ÀÇ ÇÕ°è");
+		System.out.println("\n====== 0 ~ 10 í™€ìˆ˜, ì§ìˆ˜ ì˜ í•©ê³„");
 		
 		System.out.println("\n====== 7! ( 7 * 6 * 5 * 4 * 3 * 2 * 1 )");
-		
-
 	}
 }
