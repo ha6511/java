@@ -3,9 +3,9 @@ class Ex02{
 
 		System.out.println(true);  // boolean	
 		System.out.println(false); // boolean
-		System.out.println('A');     // ¹®ÀÚ= char
-		System.out.println(241);   // ¼ıÀÚ(Á¤¼ö) int
-		System.out.println(3.14);   // ¼ıÀÚ(½Ç¼ö) double
-		System.out.println("A");    //  ¹®ÀÚ¿­ String
+		System.out.println('A');     // ë¬¸ì= char
+		System.out.println(241);   // ìˆ«ì(ì •ìˆ˜) int
+		System.out.println(3.14);   // ìˆ«ì(ì‹¤ìˆ˜) double
+		System.out.println("A");    //  ë¬¸ìì—´ String
 	}
 }
