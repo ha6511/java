@@ -27,14 +27,12 @@ public class Ex06 {
 		}
 		
 		System.out.println("\n\n***** 구구단 *********");
-		for (int i = 1; i < 10; i++) {
+		for (int i = 0; i < 10; i++) {
 			for (int j = 2; j < 10; j++) {
-//				if	(i==1)	{
-//					System.out.print(j + "단");
-//					if (j==9)	{
-//						System.out.println();
-//					}
-//				}
+				if	(i==0)	{
+					System.out.print(j + " 단\t\t");
+					continue;
+				}
 					
 				System.out.print(j + " * " + i + " = " + j*i + "\t");
 			}

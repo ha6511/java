@@ -1,0 +1,19 @@
+package com.ict.edu;
+
+public class Ex09 {
+	public static void main(String[] args) {
+		// do ~ while 문 : while 문과 같은 반복문
+		// 초기식 
+		// do {
+		//    실행문
+		//    증감식
+		// }while (조건식)
+		
+		int k1 = 0;
+		
+		do {
+			k1++;
+		} while (k1<11);
+		
+	}
+}
