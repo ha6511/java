@@ -1,8 +1,8 @@
 class Ex07{
 	public static void main(String[] args){
-		// ¼öÀÇ ¿¬»ê¿¡ µû¸¥ ÀÚ·áÇü º¯È¯
-		// ¿¬»ê ÈÄ ¹«Á¶°Ç Å« ÀÚ·áÇüÀ¸·Î º¯°æµÊ
-		// ¿¹¿Ü) byte, short ´Â ¿¬»êÀ» ÇÏ¸é int ÀÌ»óÀÇ ÀÚ·áÇüÀ¸·Î º¯°æ
+		// ìˆ˜ì˜ ì—°ì‚°ì— ë”°ë¥¸ ìë£Œí˜• ë³€í™˜
+		// ì—°ì‚° í›„ ë¬´ì¡°ê±´ í° ìë£Œí˜•ìœ¼ë¡œ ë³€ê²½ë¨
+		// ì˜ˆì™¸) byte, short ëŠ” ì—°ì‚°ì„ í•˜ë©´ int ì´ìƒì˜ ìë£Œí˜•ìœ¼ë¡œ ë³€ê²½
 
 		byte su1 = 20;
 		short su2 = 25;
@@ -40,7 +40,7 @@ class Ex07{
 		// float + float = float 
 		// float + double = double 
 
-		// ¼Ò¼ıÁ¡ Ã¹Â°ÀÚ¸®±î¸® ±¸ÇÏÀÚ  
+		// ì†Œìˆ«ì  ì²«ì§¸ìë¦¬ê¹Œë¦¬ êµ¬í•˜ì  
 		double num1 = 83.5555;
 		int num2 = (int)(num1 * 100);
 		System.out.println(num2);
@@ -48,12 +48,13 @@ class Ex07{
 		System.out.println(num3);
 
 
-		// ÀÏÀÇ ÀÚ¸® Àı»èÇÏ±â
+		// ì¼ì˜ ìë¦¬ ì ˆì‚­í•˜ê¸°
 		int num4 = 12758;
 		int num5 =  num4 /10;
 		System.out.println(num5);
 		int num6 = num5 * 10;
 		System.out.println(num6);
 
+		
 	}
 }
