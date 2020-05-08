@@ -3,94 +3,94 @@ package com.ict.edu;
 public class Ex04 {
 	public static void main(String[] args) {
 		
-		//	switch ~ case : if¹®°ú °°ÀÌ Á¶°Ç¹®
-		//	if ¹®Àº Á¶°Ç½ÄÀÌ booleanÇüÀÌ´Ù. Áï ºñ±³¿¬»ê, ³í¸®¿¬»ê, booleanÇü »ç¿ë
-		//	wwitch¹®Àº ÀÎÀÚ°ªÀÌ byte, short, int, char, String ÀÏ¶§ »ç¿ë
+		//	switch ~ case : ifë¬¸ê³¼ ê°™ì´ ì¡°ê±´ë¬¸
+		//	if ë¬¸ì€ ì¡°ê±´ì‹ì´ booleaní˜•ì´ë‹¤. ì¦‰ ë¹„êµì—°ì‚°, ë…¼ë¦¬ì—°ì‚°, booleaní˜• ì‚¬ìš©
+		//	wwitchë¬¸ì€ ì¸ìê°’ì´ byte, short, int, char, String ì¼ë•Œ ì‚¬ìš©
 		//
-		//		switch (ÀÎÀÚ°ª) {
-		//		case Á¶°Ç°ª1 : ÀÎÀÚ°ª°ú Á¶°Ç°ª1°ú °°À»¶§ ¼öÇàÇÒ ¹®Àå ;					
+		//		switch (ì¸ìê°’) {
+		//		case ì¡°ê±´ê°’1 : ì¸ìê°’ê³¼ ì¡°ê±´ê°’1ê³¼ ê°™ì„ë•Œ ìˆ˜í–‰í•  ë¬¸ì¥ ;					
 		//			break;
-		//		case Á¶°Ç°ª2 : ÀÎÀÚ°ª°ú Á¶°Ç°ª2°ú °°À»¶§ ¼öÇàÇÒ ¹®Àå ;					
+		//		case ì¡°ê±´ê°’2 : ì¸ìê°’ê³¼ ì¡°ê±´ê°’2ê³¼ ê°™ì„ë•Œ ìˆ˜í–‰í•  ë¬¸ì¥ ;					
 		//			break;
-		//		case Á¶°Ç°ª3 : ÀÎÀÚ°ª°ú Á¶°Ç°ª3°ú °°À»¶§ ¼öÇàÇÒ ¹®Àå ;					
+		//		case ì¡°ê±´ê°’3 : ì¸ìê°’ê³¼ ì¡°ê±´ê°’3ê³¼ ê°™ì„ë•Œ ìˆ˜í–‰í•  ë¬¸ì¥ ;					
 		//			break;
-		//		case Á¶°Ç°ª4 : ÀÎÀÚ°ª°ú Á¶°Ç°ª4°ú °°À»¶§ ¼öÇàÇÒ ¹®Àå ;					
+		//		case ì¡°ê±´ê°’4 : ì¸ìê°’ê³¼ ì¡°ê±´ê°’4ê³¼ ê°™ì„ë•Œ ìˆ˜í–‰í•  ë¬¸ì¥ ;					
 		//			break;
 		//		default:
 		//			break;
 		//		}
-		//	break°¡ ¾øÀ¸¸é break¸¦ ¸¸³¯¶§ ±îÁö ¸ğµç ½ÇÇà¹®À» ½ÇÇà
-		// 	breakÀÇ ¿ªÈ°Àº ÇöÀç ½ÇÇàÇÏ°í ÀÖ´Â ¹üÀ§¸¦ ¹ş¾î³ª´Â ¿ªÈ° 
+		//	breakê°€ ì—†ìœ¼ë©´ breakë¥¼ ë§Œë‚ ë•Œ ê¹Œì§€ ëª¨ë“  ì‹¤í–‰ë¬¸ì„ ì‹¤í–‰
+		// 	breakì˜ ì—­í™œì€ í˜„ì¬ ì‹¤í–‰í•˜ê³  ìˆëŠ” ë²”ìœ„ë¥¼ ë²—ì–´ë‚˜ëŠ” ì—­í™œ 
 		
 		String	result	=	"";
 		
-		//	char k1ÀÌ A ÀÌ¸é ¾ÆÇÁ¸®Ä«, B ÀÌ¸é  ºê¶óÁú, CÀÌ¸é Ä³³ª´Ù, ³ª¸ÓÁö´Â ÇÑ±¹
+		//	char k1ì´ A ì´ë©´ ì•„í”„ë¦¬ì¹´, B ì´ë©´  ë¸Œë¼ì§ˆ, Cì´ë©´ ìºë‚˜ë‹¤, ë‚˜ë¨¸ì§€ëŠ” í•œêµ­
 		char	k1	=	'A';
 		switch (k1) {
-		case 'A':	result	=	"¾ÆÇÁ¸®Ä«";			
+		case 'A':	result	=	"ì•„í”„ë¦¬ì¹´";			
 					break;
-		case 'B':	result	=	"ºê¶óÁú";			
+		case 'B':	result	=	"ë¸Œë¼ì§ˆ";			
 					break;
-		case 'C':	result	=	"Ä³³ª´Ù";			
+		case 'C':	result	=	"ìºë‚˜ë‹¤";			
 					break;
-		default:	result	=	"ÇÑ±¹";	
+		default:	result	=	"í•œêµ­";	
 					break;
 		}
-		System.out.println(k1 +"Àº "+ result + "ÀÌ´Ù");
+		System.out.println(k1 +"ì€ "+ result + "ì´ë‹¤");
 		
 		
-		//	char k2ÀÌ A,a ÀÌ¸é ¾ÆÇÁ¸®Ä«, B,b ÀÌ¸é  ºê¶óÁú, C,cÀÌ¸é Ä³³ª´Ù, ³ª¸ÓÁö´Â ÇÑ±¹
+		//	char k2ì´ A,a ì´ë©´ ì•„í”„ë¦¬ì¹´, B,b ì´ë©´  ë¸Œë¼ì§ˆ, C,cì´ë©´ ìºë‚˜ë‹¤, ë‚˜ë¨¸ì§€ëŠ” í•œêµ­
 		char	k2	=	'B';
 		switch (k2) {
 		case 'A':	
-		case 'a':	result	=	"¾ÆÇÁ¸®Ä«";			
+		case 'a':	result	=	"ì•„í”„ë¦¬ì¹´";			
 					break;
 		case 'B':	
-		case 'b':	result	=	"ºê¶óÁú";			
+		case 'b':	result	=	"ë¸Œë¼ì§ˆ";			
 					break;
 		case 'C':	
-		case 'c':	result	=	"Ä³³ª´Ù";			
+		case 'c':	result	=	"ìºë‚˜ë‹¤";			
 					break;
 		default:	
-					result	=	"ÇÑ±¹";	
+					result	=	"í•œêµ­";	
 					break;
 		}
-		System.out.println(k2 +"Àº "+ result + "ÀÌ´Ù");
+		System.out.println(k2 +"ì€ "+ result + "ì´ë‹¤");
 		
 		
-		//	int k3°¡ 1 ¶Ç´Â 3 ÀÌ¸é ³²ÀÚ, 2¶Ç´Â 4ÀÌ¸é ¿©ÀÚ 
+		//	int k3ê°€ 1 ë˜ëŠ” 3 ì´ë©´ ë‚¨ì, 2ë˜ëŠ” 4ì´ë©´ ì—¬ì 
 		int	k3	=	1;
 		switch (k3) {
 		case 1:	
-		case 3:		result	=	"³²ÀÚ";			
+		case 3:		result	=	"ë‚¨ì";			
 					break;
 		case 2:	
-		case 4:		result	=	"¿©ÀÚ";			
+		case 4:		result	=	"ì—¬ì";			
 					break;
 		}
-		System.out.println(k3 +"Àº "+ result + "ÀÌ´Ù");
+		System.out.println(k3 +"ì€ "+ result + "ì´ë‹¤");
 		
 		
-		//  String k4 ÀÌ  ÇÑ±¹ ÀÌ¸é ¼­¿ï , Áß±¹ÀÌ¸é ºÏ°æ, ÀÏº»ÀÌ¸é µ¿°æ, ¹Ì±¹ÀÌ¸é ¿ö½ÌÅÏ 
-		String	k4	=	"ÇÑ±¹";
+		//  String k4 ì´  í•œêµ­ ì´ë©´ ì„œìš¸ , ì¤‘êµ­ì´ë©´ ë¶ê²½, ì¼ë³¸ì´ë©´ ë™ê²½, ë¯¸êµ­ì´ë©´ ì›Œì‹±í„´ 
+		String	k4	=	"í•œêµ­";
 		switch (k4) {
-		case "ÇÑ±¹":
-					 result	=	"¼­¿ï";
+		case "í•œêµ­":
+					 result	=	"ì„œìš¸";
 					 break;
-		case "Áß±¹":
-					result	=	"ºÏ°æ";
+		case "ì¤‘êµ­":
+					result	=	"ë¶ê²½";
 					break;
-		case "ÀÏº»":
-			 		result	=	"µ¿°æ";
+		case "ì¼ë³¸":
+			 		result	=	"ë™ê²½";
 			 		break;
-		case "¹Ì±¹":
-			 		result	=	"¿ö½ÌÅÏ"; 
+		case "ë¯¸êµ­":
+			 		result	=	"ì›Œì‹±í„´"; 
 			 		break;
 		}
-		System.out.println(k4 +" ¼öµµ´Â "+ result + "ÀÌ´Ù");
+		System.out.println(k4 +" ìˆ˜ë„ëŠ” "+ result + "ì´ë‹¤");
 		
-		// switch ¹®Àº ¹üÀ§°¡ ³Ğ¾îÁö¸é »ç¿ëÇÏÁö ¸»°í if  ¹®À» »ç¿ëÇÏÀÚ
-		// int k6ÀÇ Á¡¼ö°¡ 90ÀÌ»óÀÌ¸é A, 80ÀÌ»óÀÌ¸é B, 70 ÀÌ»óÀÌ¸é C, ³ª¸ÓÁö´Â F
+		// switch ë¬¸ì€ ë²”ìœ„ê°€ ë„“ì–´ì§€ë©´ ì‚¬ìš©í•˜ì§€ ë§ê³  if  ë¬¸ì„ ì‚¬ìš©í•˜ì
+		// int k6ì˜ ì ìˆ˜ê°€ 90ì´ìƒì´ë©´ A, 80ì´ìƒì´ë©´ B, 70 ì´ìƒì´ë©´ C, ë‚˜ë¨¸ì§€ëŠ” F
 		int 	k6	=	94;
 		switch	((int)(k6/10))	{
 			case	10	:
@@ -99,9 +99,7 @@ public class Ex04 {
 			case	7	:	result	=	"C";	break;	
 			default		:	result	=	"F";	break;	
 		}
-		System.out.println(k6 +" ÇĞÁ¡Àº "+ result + "ÀÌ´Ù");
-		
-		
+		System.out.println(k6 +" í•™ì ì€ "+ result + "ì´ë‹¤");
 		
 	}
 }
