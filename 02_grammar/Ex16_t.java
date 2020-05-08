@@ -6,13 +6,11 @@ public class Ex16_t {
 		int	su2	=	7;
 		boolean	result	=	false;
 
-		// OR ´Â ¾ÕÀÇ Á¶°ÇÀÌ true ÀÌ¸é µÚÀÇ Á¶°ÇÀº ¿¬»êÇÏÁö ¾Ê´Â´Ù.
+		// OR ëŠ” ì•žì˜ ì¡°ê±´ì´ true ì´ë©´ ë’¤ì˜ ì¡°ê±´ì€ ì—°ì‚°í•˜ì§€ ì•ŠëŠ”ë‹¤.
 		result	=	((su1 = su1+2) > su2 ) || (su1 == (su2 = su2 + 5));
 		//			      9          7 	
-		System.out.println("°á°ú = " + result);		//	true
+		System.out.println("ê²°ê³¼ = " + result);		//	true
 		System.out.println("su1 = " + su1);			//	9
 		System.out.println("su2 = " + su2);			//	7
-		
-		
 	}
 }
