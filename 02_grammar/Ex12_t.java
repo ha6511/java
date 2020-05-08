@@ -2,7 +2,7 @@
 public class Ex12_t {
 	public static void main(String[] args) {
 
-		// 3689 ÃÊ ´Â ¸î½Ã ¸îºĞ ¸îÃÊ ÀÎ°¡?
+		// 3689 ì´ˆ ëŠ” ëª‡ì‹œ ëª‡ë¶„ ëª‡ì´ˆ ì¸ê°€?
 		int	time	=	3689;
 		int	h		=	0;
 		int	m		=	0;
@@ -14,11 +14,12 @@ public class Ex12_t {
 		m	=	res	/ 60;
 		s	=	res % 60;
 		
-		System.out.println(time + "ÃÊ´Â " + h + "½Ã°£ " + m + "ºĞ " + s + "ÃÊ ÀÌ´Ù" );
+		System.out.println(time + "ì´ˆëŠ” " + h + "ì‹œê°„ " + m + "ë¶„ " + s + "ì´ˆ ì´ë‹¤" );
 		
 		int	out	=	h * (60*60) + m * 60 + s;
 		
-		System.out.println(h + "½Ã°£ " + m + "ºĞ " + s + "ÃÊ´Â " + out + "ÃÊ ÀÌ´Ù" );
+		System.out.println(h + "ì‹œê°„ " + m + "ë¶„ " + s + "ì´ˆëŠ” " + out + "ì´ˆ ì´ë‹¤" );
 		
 	}
 }
+
