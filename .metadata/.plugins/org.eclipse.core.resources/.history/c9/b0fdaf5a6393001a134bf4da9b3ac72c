@@ -1,0 +1,7 @@
+package com.ict.edu;
+
+import java.util.Scanner;
+
+public class Sc07 {
+	Scanner sc = new Scanner(System.in);
+}

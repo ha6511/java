@@ -1,0 +1,10 @@
+package com.ict.edu;
+
+import java.util.Scanner;
+
+public class Ex02 {
+	public static void main(String[] args) {
+		// 숫자를 받아서 홀수, 짝수를 구분하자
+		Scanner sc = new Scanner(System.in);
+	}
+}

@@ -1,0 +1,43 @@
+package com.ict.edu;
+
+import java.util.Scanner;
+
+public class Ex06 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String 	name 	= 	"";
+		int		kor		=	0;
+		int		eng		=	0;
+		int		math	=	0;
+		
+		int		tot		=	0;
+		double	avg		=	0;
+		String	hak		=	"";
+		
+		while(true) {
+			
+			name	=	sc.next();
+			kor		=	sc.nextInt();
+			eng		=	sc.nextInt();
+			math	=	sc.nextInt();
+			
+			tot		=	kor + eng + math;
+			avg		=	(int)(( (tot / 3) * 10) / 0.1 );
+			
+			if (avg >= 90) {
+				hak = "A 학점";
+			}
+			else if (avg >= 80) {
+				hak = "B 학점";
+			}
+			else if (avg >= 70) {
+				hak = "C 학점";
+			}
+			else {
+				hak = "F 학점";
+			}
+		}
+	}
+}
