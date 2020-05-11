@@ -18,7 +18,6 @@ public class Ex06 {
 		
 		esc : while(true) {
 
-			System.out.print("\n\n<< 성적표 >>");
 			System.out.print("이름 : ");
 			name	=	sc.next();
 			

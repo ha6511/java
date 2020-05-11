@@ -11,7 +11,6 @@ public class Sc07 {
 		esc : 
 		while (true) {
 			
-			System.out.print("\n\n<< 자판기 >>");
 			System.out.print("\n\n입금액 : ");
 			int input = sc.nextInt();
 			
