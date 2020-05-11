@@ -8,9 +8,10 @@ public class Sc07 {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		esc : 
 		while (true) {
 			
-			System.out.print("입금액 : ");
+			System.out.print("\n\n입금액 : ");
 			int input = sc.nextInt();
 			
 			System.out.println("메뉴 : 1. 커피음료 (3,500)");
@@ -37,18 +38,40 @@ public class Sc07 {
 				break;
 			case 4:
 				name 	=  "과일쥬스";
-				amt		=	400;	
+				amt		=	4000;	
 				break;
 
 			default:
-				break;
+				System.out.println("잘못 선택했습니다.");
+				continue esc;
 			}
 			
 			int vat = (int)(amt * 0.1);
+			int tot =  amt + vat;
+			int output = input - tot;
 			
-			System.out.println("선택한 음료");
-			System.out.println("입금액");
-			System.out.println("잔돈");
+			if (output < 0)	{
+				System.out.println("입금액이 부족합니다. 메뉴금액 :"+ tot);
+				continue esc;
+			}
+			System.out.println();
+			System.out.println("선택한 음료 : " + name );
+			System.out.println("입금액 : " + input );
+			System.out.println("잔돈 : " + output);
+			
+			while (true) {
+				System.out.print("\n계속할까요? (1:yes, 2:no)");
+				int con = sc.nextInt();
+				if (con == 1) {
+					continue esc;
+				} else if (con == 2) {
+					break esc;
+				} else {
+				  System.out.println("잘못 입력했습니다.");
+				  continue;
+				}
+			}
+			
 		}
 	}
 
