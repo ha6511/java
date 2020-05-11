@@ -21,27 +21,27 @@ public class Ex07 {
 		//		while문 끝을 만나면 무조건 조건식으로 가라.
 		
 		//	0 ~ 10 까지 출력
-//		for (int i = 0; i < 11; i++) {
-//			System.out.print(i+ " ");
-//		}
-//		
-//		System.out.println("\n****************");
-//		
-//		int k1=0;		
-//		while (k1 < 11) {
-//			System.out.print(k1 + " ");
-//			k1++;
-//		}
-//		
-//		System.out.println("\n****************");
-//		int	k2=0;
-//		while(true) {
-//			if	(k2 >10)	{
-//				break;
-//			}
-//			k2++;
-//			System.out.println(k2 + " ");
-//		}
+		System.out.println("\n\n***0 ~ 10 까지 출력");
+		for (int i = 0; i < 11; i++) {
+			System.out.print(i+ " ");
+		}
+
+		System.out.println("\n\n***0 ~ 10 까지 출력");
+		int k1=0;		
+		while (k1 < 11) {
+			System.out.print(k1 + " ");
+			k1++;
+		}
+
+		System.out.println("\n\n***0 ~ 10 까지 출력");
+		int	k2=0;
+		while(true) {
+			if	(k2 > 10)	{
+				break;
+			}
+			k2++;
+			System.out.print(k2 + " ");
+		}
 
 		//	0 - 10 까지 짝수 출력하기
 		System.out.println("\n====== 0 - 10 까지 짝수 출력하기");
@@ -102,13 +102,58 @@ public class Ex07 {
 			i++;
 		}
 		System.out.println("\n====== 0 ~ 10 누적합계");
+		int sum = 0;
+		i=0;
+		while (i<11) {
+			sum += i;
+			i++;
+		}
+		System.out.println(sum);
 		
 		System.out.println("\n====== 0 ~ 10 홀수의 합계");
-					
+		sum=0;
+		i=0;
+		while (i<11) {
+			if (i%2==1) {
+				sum += i;
+			}
+			i++;
+		}
+		System.out.println(sum);
+				
 		System.out.println("\n====== 0 ~ 10 짝수의 합계");
-
+		sum=0;
+		i=0;
+		while (i<11) {
+			if (i%2==0) {
+				sum += i;
+			}
+			i++;
+		}
+		System.out.println(sum);
+		
 		System.out.println("\n====== 0 ~ 10 홀수, 짝수 의 합계");
+		int sum0=0;
+		int sum1=0;
+		i=0;
+		while (i<11) {
+			if (i%2==0) {
+				sum0 += i;
+			} else {
+				sum1 += i;
+			}
+			i++;
+		}
+		System.out.println("짝수 합 : " + sum0);
+		System.out.println("홀수 합 : " + sum1);
 		
 		System.out.println("\n====== 7! ( 7 * 6 * 5 * 4 * 3 * 2 * 1 )");
+		sum=1;
+		i=7;
+		while (i>0) {
+			sum *= i;
+			i--;
+		}
+		System.out.println(sum);
 	}
 }
