@@ -1,0 +1,9 @@
+package com.ict.edu;
+
+public class Ex07 {
+	public static void main(String[] args) {
+		
+		double[][] aa = new double[2][];
+		
+	}
+}

@@ -1,0 +1,13 @@
+package com.ict.edu;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		int[] su;
+		su = new int[3];
+		for (int k : su) {
+			k= 1;
+			
+		}
+	}
+}

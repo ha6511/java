@@ -17,8 +17,11 @@ public class Ex06 {
 		String	hak		=	"";
 		
 		esc : while(true) {
+			
+			//	이름, 국어, 영어, 수학 정보를 받아서
+			//	이름, 총점, 평균(소숫점 첫째자리까지), 학점 출력 
 
-			System.out.print("\n\n<< 성적표 >>");
+			System.out.println("\n\n<< 성적표 >>\n");
 			System.out.print("이름 : ");
 			name	=	sc.next();
 			
@@ -32,7 +35,7 @@ public class Ex06 {
 			math	=	sc.nextInt();
 			
 			tot		=	kor + eng + math;
-			avg		=	(int)(( (tot / 3) * 10) * 0.1 );
+			avg		=	(int)(tot/3.0*10)/10.0;
 			
 			if (avg >= 90) {
 				hak = "A 학점";
@@ -65,6 +68,6 @@ public class Ex06 {
 				}
 			}
 		}
-		System.out.println("작업 죵료");
+		System.out.println("\n작업 죵료\n");
 	}
 }
