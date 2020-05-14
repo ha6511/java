@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.ict.edu.Ex02"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.ict.edu.Ex03"/>
+<fullyQualifiedTypeName name="com.ict.edu.Ex04"/>
+<fullyQualifiedTypeName name="com.ict.edu.Ex05"/>
+<fullyQualifiedTypeName name="com.ict.edu.Ex06"/>
+<fullyQualifiedTypeName name="com.ict.edu.Ex07"/>
+<fullyQualifiedTypeName name="com.ict.edu.Ex08"/>
+<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+<fullyQualifiedTypeName name="com.ict.study.Ex10"/>
+<fullyQualifiedTypeName name="com.ict.study.Ex08"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="org.omg.PortableInterceptor.SYSTEM_EXCEPTION"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
