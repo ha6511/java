@@ -12,12 +12,14 @@ public class Ex09 {
 	
 	//	합계구하기
 	public	void	s_sum(int kor, int eng, int math)	{
-		sum	= kor + eng + math;
+		this.sum	= kor + eng + math;
+		s_avg();
 	}
 	
 	//	평균구하기
 	public	void	s_avg()	{
-		avg	=	(int)( (sum / 3.0) * 10 ) / 10.0; 
+		this.avg	=	(int)( (sum / 3.0) * 10 ) / 10.0;
+		s_hak();
 	}
 	
 	//	학점구하기

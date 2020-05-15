@@ -1,14 +1,28 @@
-// 2020-05-14
+//	2020-05-15
 
 package com.ict.edu;
 
-public class Ex10 {
+public class Ex12 {
 
 	private	String	name;
 	private	int		sum;
 	private	double	avg;
 	private	String	hak;
-	private	int		rank = 1;
+	private	int		rank;
+	
+	// 생성자 
+	public Ex12()	{
+		
+	}
+	public Ex12(String name, int sum, double avg, String hak, int rank) {
+
+		this.name	=	name;
+		this.sum	=	sum;
+		this.avg	=	avg;
+		this.hak	=	hak;
+		this.rank	=	rank;
+	}	
+	
 	
 	//	합계구하기
 	public	int	s_sum(int kor, int eng, int math)	{
@@ -83,5 +97,5 @@ public class Ex10 {
 		this.rank += 1;
 		return this.rank;
 	}
-	
+		
 }

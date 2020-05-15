@@ -16,44 +16,40 @@ public class Ex10_main {
 		Ex10[] arr = new Ex10[5];
 		
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] =  new Ex10();
-		}
-		
-		for (int i = 0; i < arr.length; i++) {
+			
+			Ex10 person = new Ex10();
 			
 			System.out.println();
 			
 			System.out.print((i+1) +"번째 이름을 입력하세요 : ");
-			String	name	=	sc.next();
-			arr[i].setName(name);
+			person.setName(sc.next());
 			
-			System.out.print(arr[i].getName() + "의 국어점수 : ");
+			System.out.print(person.getName() + "의 국어점수 : ");
 			int	kor = sc.nextInt();
 			
-			System.out.print(arr[i].getName() + "의 영어점수 : ");
+			System.out.print(person.getName() + "의 영어점수 : ");
 			int	eng = sc.nextInt();
 			
-			System.out.print(arr[i].getName() + "의 수학점수 : ");
+			System.out.print(person.getName() + "의 수학점수 : ");
 			int	math = sc.nextInt();
 			
 			//	총점
-			int 	sum = arr[i].s_sum(kor, eng, math);
-			arr[i].setSum(sum);
+			person.setSum(person.s_sum(kor, eng, math));
 			
 			//	평균
-			double	avg = arr[i].s_avg(sum);
-			arr[i].setAvg(avg);
+			person.setAvg(person.s_avg());
 			
 			//	학점
-			String	hak	= arr[i].s_hak(avg);
-			arr[i].setHak(hak);
+			person.setHak(person.s_hak());
+			
+			arr[i] = person;
 		}
 		
 		//	등수구하기
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr.length; j++) {
 				if (arr[i].getSum() < arr[j].getSum())	{
-					arr[i].setRank(arr[i].addRank());
+					arr[i].setRank(arr[i].getRank()+1);
 				}
 			}
 		}
