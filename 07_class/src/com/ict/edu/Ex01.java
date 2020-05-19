@@ -1,3 +1,4 @@
+//	2020-05-15
 package com.ict.edu;
 
 public class Ex01 {
@@ -28,7 +29,7 @@ public class Ex01 {
 		System.out.println("===============");
 		
 		//	같다.
-		//	char, int, double 등 숫자를 저장하는 자료형,ㄴ 
+		//	char, int, double 등 숫자를 저장하는 자료형은 
 		//	"같다" 라는 표현은 '==' 사용한다.
 		//	그러나 문자열(String)은 '=='를 사용하면 안됨
 		//	이유는 숫자는 내용이 같다 라는 뚯이고
