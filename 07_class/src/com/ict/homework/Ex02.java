@@ -8,8 +8,8 @@ public class Ex02 {
 
 	public static void main(String[] args) {
 		
-		int	winCnt	=	0;
-		int	gameCnt	=	0;
+		int		winCnt	=	0;
+		int		gameCnt	=	0;
 		
 		esc0 :
 		while (true)	{
@@ -67,10 +67,19 @@ public class Ex02 {
 			}
 			
 		}
+		
 		System.out.println();
 		System.out.println("******** The End *********");
 		System.out.println("총 Game 건수 : " + gameCnt);
 		System.out.println("이긴    건수 : " + winCnt);
+
+		if (gameCnt > 0) {
+			
+			double  rate = winCnt / (gameCnt * 1.0) *100;
+			double	rate1 = (int)( rate * 10.0 ) / 10.0;
+			System.out.println("승률         : " + rate1 + " %");
+		}
+		
 		
 		
 	}

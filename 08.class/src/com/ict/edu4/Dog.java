@@ -1,6 +1,6 @@
 package com.ict.edu4;
 
-public class Dog extends Animal{
+public class Dog extends Animal_final{
 
 	String	name	=	"댕댕이";
 	int		age		=	3;

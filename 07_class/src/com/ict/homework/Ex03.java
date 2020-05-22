@@ -6,41 +6,57 @@ public class Ex03 {
 
 	public static void main(String[] args) {
 
-		int comWin = 0;
-		int userWin = 0;
-		
+		int		winCnt	=	0;
+		int		gameCnt	=	0;
+
 		esc0:
 		while (true) {
 
 			System.out.println("======[ 카드 게임 ]=======");
 
-			int comSu = (int) (Math.random() * 13) + 1; // 0 ~ 13 까지의 난수
+			int comSu = (int) (Math.random() * 13) + 1; // 0 ~ 12 까지의 난수 + 1
 
 			Scanner sc = new Scanner(System.in);
 			int userSu = 0;
 
-			esc1: while (true) {
-
-				System.out.print("1 ~ 13 까지의 수 >> ");
-				userSu = sc.nextInt(); // 화면에서 입력 받음
-
-				if (userSu < 1 || userSu > 13) {
-					System.out.println("1 ~ 13 까지의 수 중에서 입력하세요");
-				} else {
-					break esc1;
+			esc1:
+			while	(true)	{
+				
+				System.out.print("0.낮음, 1.높음=> ");
+				userSu	=	sc.nextInt();			//	화면에서 입력 받음
+				
+				switch (userSu) {
+				case 0 : 
+				case 1 : break esc1;	
+				default: System.out.println("높고 낮음을 선택하세요");
+						  break;
 				}
 			}
-
-			if (comSu > userSu) {
-				System.out.println("Compter Win");
-				comWin++;
-			} else if (comSu < userSu) {
-				System.out.println("User Win");
-				userWin++;
-			} else {
-				System.out.println("Equal");
+			switch (userSu) {
+			case 0 : //	 낮음 
+				if (comSu > 7) {
+					System.out.println("Compter Win");
+				} else if (comSu == 7) {
+					System.out.println("EQUAL");
+				} else	{
+					System.out.println("You Win");
+					winCnt++;
+				}	
+				break;
+			case 1 : //	 높음 
+				if (comSu > 7) {
+					System.out.println("You Win");
+					winCnt++;
+				} else if (comSu == 7) {
+					System.out.println("EQUAL");
+				} else	{
+					System.out.println("Compter Win");
+				}	
+				break;
 			}
-			System.out.println("컴퓨터 수 :" + comSu);
+			gameCnt++;
+
+			System.out.println("카드값 : " + comSu);
 
 			esc2: while (true) {
 
@@ -60,8 +76,16 @@ public class Ex03 {
 			}
 		}
 		System.out.println("******** The End *********");
-		System.out.println("Compter Win : "+ comWin);
-		System.out.println("User    Win : "+ userWin);
+		System.out.println("Game 건수 : " + gameCnt);
+		System.out.println("이긴 건수 : " + winCnt);
+
+		if (gameCnt > 0) {
+			
+			double  rate = winCnt / (gameCnt * 1.0) *100;
+			double	rate1 = (int)( rate * 10.0 ) / 10.0;
+			System.out.println("승률      : " + rate1 + " %");
+		}
+		
 		
 	}
 }

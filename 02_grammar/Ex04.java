@@ -6,7 +6,7 @@ class Ex04{
 	// 정수형 : byte < short < int < long
 	// 정수형 기본은 int
 
-	// 실수형 : floar < double
+	// 실수형 : float < double
 	// 실수형 기본은 double
 
 	// byte :  정수형 중 가장 작은 단위

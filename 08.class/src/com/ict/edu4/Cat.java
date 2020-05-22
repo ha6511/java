@@ -1,6 +1,6 @@
 package com.ict.edu4;
 
-public class Cat extends Animal {
+public class Cat extends Animal_final {
 
 	String	name	=	"나비";
 	int		age		=	10;
