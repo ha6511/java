@@ -30,13 +30,45 @@ public class Ex06 {
 		for (int i = 0; i < 10; i++) {
 			for (int j = 2; j < 10; j++) {
 				if	(i==0)	{
-					System.out.print(j + " 단\t\t");
+					System.out.print("  "+ j + " 단\t\t");
 					continue;
 				}
 					
 				System.out.print(j + " * " + i + " = " + j*i + "\t");
 			}
 			System.out.println();
+		}
+
+		System.out.println("\n\n***** 구구단 *********");
+		for (int k = 0; k < 2; k++) {
+			if (k==0) {
+				for (int i = 0; i < 10 ; i++) {
+					for (int j = 1; j < 5 ; j++) {
+						if	(i==0)	{
+							System.out.print("  "+ j + " 단\t\t");
+							continue;
+						}
+							
+						System.out.print(j + " * " + i + " = " + j*i + "\t");
+					}
+					System.out.println();
+				}
+			} else {
+				for (int i = 0; i < 10 ; i++) {
+					for (int j = 6; j < 10 ; j++) {
+						if	(i==0)	{
+							if (j==6) {
+								System.out.println();
+							}
+							System.out.print("  "+ j + " 단\t\t");
+							continue;
+						}
+							
+						System.out.print(j + " * " + i + " = " + j*i + "\t");
+					}
+					System.out.println();
+				}
+			} 
 		}
 		
 		System.out.println("\n\n************");

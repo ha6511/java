@@ -81,17 +81,23 @@ public class Ex05 {
 			System.out.println("5 * "+i+" = " + 5*i);
 		}
 		
-		System.out.println("\n====== 중첩 for 문");
-		for (int i = 0; i < 4; i++) {
-			for (int j = 0; j < 4; j++) {
-				System.out.print("0\t");
-			}
-			System.out.println();
+		System.out.println("\n=====================");
+		for (int i = 1; i < 17; i++) {
+			System.out.print("0\t");
+			if (i%4==0) {
+				System.out.println();
+			}			
 		}
 		
+		System.out.println("\n====== 0 ~ 10 의 합계");
+		int sum=0;
+		for (int i = 0; i <= 10; i++) {
+			sum += i;
+		}
+		System.out.println(sum);
 		
 		System.out.println("\n====== 0 ~ 10 홀수의 합계");
-		int sum=0;
+		sum=0;
 		for (int i = 0; i <= 10; i++) {
 			if (i%2==1) {
 				sum += i;
