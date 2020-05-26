@@ -29,15 +29,16 @@ public class Ex04 {
 				
 				System.out.print("가위(1), 바위(2), 보(3) 게임종료(0)=> ");
 				
-				try {
-					userSu = sc.nextInt();
-				} catch (Exception e) {
-					System.out.println("\n숫자를 입력해야 합니다.");
+				String su = sc.next();
+				
+				if ( su.equals("0") || su.equals("1")  || su.equals("2")  || su.equals("3") ) {
+					userSu = Integer.parseInt(su);
+				}	else	{
+					System.out.println("숫자(0~4)를 선택하세요.");
+					System.out.println();
 					continue esc2;
-				} finally {
-					System.out.println("------------------");
 				}
-
+				
 				switch (userSu) {
 				case 1:
 					userStr = "가위";
@@ -50,9 +51,6 @@ public class Ex04 {
 					break esc2;
 				case 0:
 					break esc1;
-				default:
-					System.out.println("다시 선택하세요.");
-					break;
 				}
 			}
 			gameCnt++;
