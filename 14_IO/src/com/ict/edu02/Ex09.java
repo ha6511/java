@@ -22,9 +22,9 @@ public class Ex09 {
 		File	fileO	=	new	File(pathname2);
 		
 		FileInputStream			fis		=	null;
-		FileOutputStream		fos		=	null;
-		
 		BufferedInputStream		bis		=	null;
+
+		FileOutputStream		fos		=	null;
 		BufferedOutputStream	bos		=	null;
 		
 		try {
@@ -34,13 +34,13 @@ public class Ex09 {
 			fos	=	new	FileOutputStream(fileO);
 			bos	=	new BufferedOutputStream(fos);
 			
-			int k = 0 ;
+			int k = 0 ; // 1 Byte 씩 읽으므로 int로 저장된다.
 			
 			while (( k = bis.read() ) != -1 ) {
 				bos.write(k);
 			}
 			
-			bos.flush();
+			bos.flush();  // 다 쓰고 나서 한번에 밀어 넣어 준다.
 					
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -52,8 +52,13 @@ public class Ex09 {
 			
 			
 				try {
-					if 	(fos != null )	fos.close();
+					
 					if	(bos != null )  bos.close();
+					if 	(fos != null )	fos.close();
+
+					if	(bis != null )  bis.close();
+					if 	(fis != null )	fis.close();
+					
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
