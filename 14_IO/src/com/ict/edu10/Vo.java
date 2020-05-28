@@ -17,8 +17,6 @@ public class Vo implements Externalizable {
 	
 	public Vo() {}
 	
-	
-	
 	public Vo(String name, int kor, int eng, int math) {
 		super();
 		this.name = name;
@@ -37,24 +35,115 @@ public class Vo implements Externalizable {
 	}
 
 
-
+	//	역직렬
 	@Override
 	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
 
 		name	=	(String) in.readObject();
+		kor		=	(int) in.readObject();
+		eng		=	(int) in.readObject();
+		math	=	(int) in.readObject();		
 		sum		=	(int) in.readObject();
 		avg		=	(double) in.readObject();
 		hak		=	(String) in.readObject();
 	}
 
+	//	직렬
 	@Override
 	public void writeExternal(ObjectOutput out) throws IOException {
 		
 		out.writeObject(name);
+		out.writeObject(kor);
+		out.writeObject(eng);
+		out.writeObject(math);
 		out.writeObject(sum);
 		out.writeObject(avg);
 		out.writeObject(hak);
 		
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public int getKor() {
+		return kor;
+	}
+
+
+
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+
+
+
+	public int getEng() {
+		return eng;
+	}
+
+
+
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+
+
+
+	public int getMath() {
+		return math;
+	}
+
+
+
+	public void setMath(int math) {
+		this.math = math;
+	}
+
+
+
+	public int getSum() {
+		return sum;
+	}
+
+
+
+	public void setSum(int sum) {
+		this.sum = sum;
+	}
+
+
+
+	public double getAvg() {
+		return avg;
+	}
+
+
+
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+
+
+
+	public String getHak() {
+		return hak;
+	}
+
+
+
+	public void setHak(String hak) {
+		this.hak = hak;
 	}
 
 	

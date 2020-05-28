@@ -11,19 +11,20 @@ public class Output {
 	
 	public static void main(String[] args) {
 		
-		String pathname = "C:" + File.separator + "study" + File.separator + "util" + File.separator + "io14.txt";
-		File file = new File(pathname);
-
+		String 					pathname 	= 	"C:" + File.separator + "study" + File.separator + "util" + File.separator + "io14.txt";
 		
-		FileOutputStream		fos		=	null;
-		BufferedOutputStream	bos		=	null;
-		ObjectOutputStream		oos		=	null;
+		File 					file 		= 	new File(pathname);
 		
-		Scanner	sc	=	new Scanner(System.in);
+		FileOutputStream		fos			=	null;
+		BufferedOutputStream	bos			=	null;
+		ObjectOutputStream		oos			=	null;
 		
-		ArrayList<Vo> list =  new ArrayList<Vo>();
+		Scanner					sc			=	new 	Scanner(System.in);
+		
+		ArrayList<Vo> 			list 		=  	new 	ArrayList<Vo>();
 		
 		try {
+			// 체인방식 
 			fos	=	new FileOutputStream(file);
 			bos	=	new BufferedOutputStream(fos);
 			oos	=	new ObjectOutputStream(bos);
@@ -32,7 +33,7 @@ public class Output {
 			
 			while (true) {
 				
-				System.out.println("====== " + ++num + " 번째 ===========");
+				System.out.println("\n====== " + ++num + " 번째 학생 ===========");
 				
 				System.out.print("이름 : ");
 				String name = sc.next();
@@ -49,7 +50,7 @@ public class Output {
 				Vo vo = new Vo(name, kor, eng, math);
 				list.add(vo);
 				
-				System.out.print("계속 할까요? (Y/N)");
+				System.out.print("\n계속 할까요? (Y/N) ");
 				String res = sc.next();
 				
 				if (res.equalsIgnoreCase("n")) break;
@@ -58,6 +59,8 @@ public class Output {
 			oos.writeObject(list);
 			
 			oos.flush();
+			
+			System.out.println("====== 작업 종료 =========");
 			
 			
 		} catch (Exception e) {
