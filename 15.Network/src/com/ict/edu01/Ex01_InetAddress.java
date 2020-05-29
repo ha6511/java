@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 //               생성자가 존재하지만 사용하지 않는다.
 //               6개의 static메소드를 이용한다.
 //               ** localhost 란 현재 내가 사용하고 있는 컴퓨터를 말한다.
-public class Ex01 {
+public class Ex01_InetAddress {
 	public static void main(String[] args) {
 		try {
 			InetAddress addr = InetAddress.getLocalHost();

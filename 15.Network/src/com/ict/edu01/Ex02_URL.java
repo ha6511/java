@@ -13,7 +13,7 @@ import java.net.URL;
 // URL(Uniform Resource Locator) 클래스 : 인터넷에서 접근 가능한 자원의 주소
 //                                        원격지 서버 자원의 결과만 가져온다. 
 // final 클래스이다.(상속 안됨)              
-public class Ex02 {
+public class Ex02_URL {
 	public static void main(String[] args) {
 		// 해당 사이트 가서 정보읽기
 		InputStream is = null;

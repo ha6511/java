@@ -27,7 +27,7 @@ import org.xml.sax.InputSource;
 // XML 파싱 : xml로 구성되 데이터를 원하는 데이터만 추출, 가공하는 방법
 //  - DOM(Document Object Modeling)방식 : 웹브라우저가 태그 해석하고 표현하는 방식
 
-public class Ex05 {
+public class Ex05_parsing_XML {
 	public static void main(String[] args) {
 		BufferedReader br = null;
 		

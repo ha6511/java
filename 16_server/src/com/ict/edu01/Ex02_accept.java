@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import javax.xml.ws.handler.MessageContext.Scope;
-
-public class Ex02 implements Runnable {
+public class Ex02_accept implements Runnable {
 	
 	static	ServerSocket	ss;
 	
@@ -18,7 +16,7 @@ public class Ex02 implements Runnable {
 			ss		=	new ServerSocket(7777);
 			System.out.println("서버 대기중");
 			
-			Ex02			ex02	=	new Ex02();
+			Ex02_accept			ex02	=	new Ex02_accept();
 			Thread			thread	=	new Thread(ex02);
 			thread.start();				
 			

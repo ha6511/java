@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 // URLConnection 클래스 : 원격지 서버의 자원의 결과와 원격 서버의 헤더 정보들을 가져올수 있다.
-public class Ex03 {
+public class Ex03_URLConnection {
 	public static void main(String[] args) {
       // InputStreamReader isr = null;
       BufferedReader br = null;

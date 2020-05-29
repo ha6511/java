@@ -12,7 +12,7 @@ import java.net.Socket;
 //	서버 : ServerSocket,   클라이언트 : Socket
 //	IPv4 주소 . . . . . . . . . : 203.236.220.59
 
-public class Ex01 {
+public class Ex01_ServerSocket {
 
 	public static void main(String[] args) {
 		
