@@ -1,13 +1,13 @@
 package com.ict.edu1;
 
-public class Ex01 {
+public class Ex01_currentThread {
 
 	public static void main(String[] args) { 
 		//	Thread.currentThread() : 현재 실행중인 스레드 
 		//	Thread.currentThread().getName() : 현재 실행중인 스레드의 이름 호출 
 		System.out.println("현재 실행중인 스레드 : " + Thread.currentThread().getName());
 		
-		Ex02 test = new Ex02();
+		Ex02_currentThread test = new Ex02_currentThread();
 		
 		System.out.println("0");
 		test.play();

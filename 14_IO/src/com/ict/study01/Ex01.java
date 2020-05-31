@@ -5,23 +5,30 @@ import java.io.File;
 public class Ex01 {
 	
 	public static void main(String[] args) {
-	
-		String	pathname	=	"C:"+File.separator+"study"+File.separator+"util";
 		
-		File	file		=	new	File(pathname);
+		String	pathname	=	"E:\\study\\util";
 		
-		String[]	arr		=	file.list();
+		File	file		=	new File(pathname);
+		
+		String	arr[]		=	file.list();
 		
 		for (String k : arr) {
 			
-			File	file2	=	new File(file, k);
+			System.out.println(k);
 			
-			if (file2.isDirectory()) {
-				System.out.println( file2 +"\t\t" + "<Dir>");
-			} else {
-				System.out.println( file2 +"\t\t" + file2.length());
+			File	file2	=	new File(pathname, k);
+			
+			if	(file2.isDirectory())	{
+				System.out.println("디렉토리" + file2 );
 			}
+			else	{
+				System.out.println("파일 : " + file2 + "크기 : " + file2.length());
+			}
+			
 		}
+		
+		
+		
 	}
-
+	
 }

@@ -1,6 +1,6 @@
 package com.ict.edu1;
 
-public class Ex02 {
+public class Ex02_currentThread {
 	public void play() {
 		 
 		System.out.println("Ex02.play() :" +  Thread.currentThread().getName());

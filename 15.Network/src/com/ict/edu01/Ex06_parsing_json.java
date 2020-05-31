@@ -28,7 +28,7 @@ import org.xml.sax.InputSource;
 
 
 
-public class Ex06 {
+public class Ex06_parsing_json {
 	public static void main(String[] args) {
 		
 		//	파일로 저장 

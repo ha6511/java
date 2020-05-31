@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class Ex04 {
+public class Ex04_xml {
 	public static void main(String[] args) {
 		BufferedReader br = null;
 		try {
