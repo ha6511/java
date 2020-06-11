@@ -16,7 +16,7 @@ public class Input {
 	
 	public static void main(String[] args) {
 		
-		String	pathname	=	"E:\\study\\util\\school.txt";
+		String	pathname	=	"C:\\study\\util\\school.txt";
 		File	file		=	new File(pathname);
 
 		FileInputStream		fis		=	null;
@@ -25,7 +25,7 @@ public class Input {
 		
 		Scanner				sc		=	new Scanner(System.in);
 		
-		String				outpath	=	"E:\\study\\util\\school2.txt";
+		String				outpath	=	"C:\\study\\util\\school2.txt";
 		File				file2	=	new File(outpath);
 		
 		FileWriter 			fw		=	null;
@@ -42,30 +42,18 @@ public class Input {
 			bw	=	new BufferedWriter(fw);
 			
 			ArrayList<Vo> list	=	(ArrayList<Vo>) ois.readObject();
+			
 
 			//	순위
 			for (int i = 0; i < list.size() ; i++) {
-				
 				for (int j = 0; j < list.size(); j++) {
-					
-					if (list.get(i).getLank() < list.get(j).getLank()) {
+					if (list.get(i).getSum() < list.get(j).getSum()) {
 						
-						Vo	vo	=	new Vo();
-						
-						vo	=	list.get(i);
-						
-						int lank = vo.getLank()+1;
-						
-						vo.setLank(lank);
-						
-						list.set(i, vo);
-						
+						list.get(i).setLank(list.get(i).getLank() +1);
 					}
-						
-					
 				}
-					
 			}
+			
 
 			//	정렬 
 			for (int i = 0; i < list.size() - 1; i++) {
@@ -103,7 +91,7 @@ public class Input {
 				bw.write(k.getHak() + "\t");
 				bw.write(k.getLank() + "\n");
 			}
-			
+	
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

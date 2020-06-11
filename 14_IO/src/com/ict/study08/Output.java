@@ -13,7 +13,7 @@ public class Output {
 
 	public static void main(String[] args) {
 		
-		String	pathname	=	"E:\\study\\util\\school.txt";
+		String	pathname	=	"C:\\study\\util\\school.txt";
 		File	file		=	new File(pathname);
 		
 		FileOutputStream		fos		=	null;
