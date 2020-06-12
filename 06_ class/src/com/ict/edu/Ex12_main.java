@@ -4,7 +4,7 @@ package com.ict.edu;
 
 import java.util.Scanner;
 
-public class Ex12_name {
+public class Ex12_main {
 
 	public static void main(String[] args) {
 

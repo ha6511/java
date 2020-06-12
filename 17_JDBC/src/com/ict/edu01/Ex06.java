@@ -119,7 +119,7 @@ public class Ex06 {
 				 System.out.print(rs.getString("m_pw")+"\t");
 				 System.out.print(rs.getString("m_name")+"\t");
 				 System.out.print(rs.getInt("m_age")+"\t");
-				 System.out.println(rs.getString("m_reg").subSequence(0, 10));
+				 System.out.println(rs.getString("m_reg").substring(0, 10));
 			 }
 			 
 			System.out.println("--------------------------------------------------");
@@ -162,10 +162,10 @@ public class Ex06 {
 		inq	(false);
 		
 		System.out.print("삭제할 아이디 : ");
-		int v_id = sc.nextInt();
+		String idx = sc.next();
 
 		// SQL 작성
-		String sql = "delete from members where idx = " + String.valueOf(v_id);
+		String sql = "delete from members where idx = " + idx;
 		
 		stmt_upd(sql, "삭제");
 

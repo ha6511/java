@@ -16,7 +16,7 @@ public class Ex06_name {
 		System.out.println(age);
 		System.out.println();
 		
-		//	weight 이 private 이기때문에 바로 접근할 수 없다.
+		//	weight 가 private 이기때문에 바로 접근할 수 없다.
 //		System.out.println(ex06.weight());
 		
 		//	메소드를 이용해서 접근한다. 

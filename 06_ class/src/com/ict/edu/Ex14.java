@@ -27,7 +27,7 @@ public class Ex14 {
 	
 	//	static 메소드 : static 변수 나 지역변수 사용 
 	public	static	void	add(int k1, int k2)	{
-		//	인그턴스 전역변수 사용불가 
+		//	인스턴스 전역변수 사용불가 
 		//	su	=	k1 + k2;
 		num	=	k1 + k2;	//	static 변수
 		double p1 = 3.14;	//	지역변수 

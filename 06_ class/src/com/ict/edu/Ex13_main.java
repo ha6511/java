@@ -2,7 +2,7 @@
 
 package com.ict.edu;
 
-public class Ex13_name {
+public class Ex13_main {
 
 	public static void main(String[] args) {
 		Ex13 t1 = new Ex13();
