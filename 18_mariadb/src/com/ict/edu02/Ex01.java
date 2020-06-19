@@ -1,4 +1,4 @@
-package com.ict.edu05;
+package com.ict.edu02;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -14,11 +14,11 @@ public class Ex01 {
 
 		for (VO vo : list) {
 			System.out.print(vo.getIdx() + "\t");
-			System.out.print(vo.getM_id() + "\t");
-			System.out.print(vo.getM_pw() + "\t");
-			System.out.print(vo.getM_name() + "\t");
-			System.out.print(vo.getM_age() + "\t");
-			System.out.print(vo.getM_reg() + "\n");
+			System.out.print(vo.getid() + "\t");
+			System.out.print(vo.getpw() + "\t");
+			System.out.print(vo.getname() + "\t");
+			System.out.print(vo.getage() + "\t");
+			System.out.print(vo.getreg() + "\n");
 		}
 		System.out.println("--------------------------------------------------");
 	}
@@ -30,10 +30,10 @@ public class Ex01 {
 		ArrayList<VO> list = null;
 		
 		String idx = null;
-		String m_id = null;
-		String m_pw = null;
-		String m_name = null;
-		String m_age = null;
+		String id = null;
+		String pw = null;
+		String name = null;
+		String age = null;
 
 		ESC_01 :
 		while(true) {
@@ -63,18 +63,18 @@ public class Ex01 {
 					System.out.println("*** 등록처리 ***");
 					
 					System.out.print("아이디 : ");
-					m_id = sc.next();
+					id = sc.next();
 
 					System.out.print("패스워드 : ");
-					m_pw = sc.next();
+					pw = sc.next();
 					
 					System.out.print("이름 : ");
-					m_name = sc.next();
+					name = sc.next();
 					
 					System.out.print("나이 : ");
-					m_age = sc.next();
+					age = sc.next();
 					
-					list  = DAO.getInstance().getInsert(m_id, m_pw, m_name, m_age);
+					list  = DAO.getInstance().getInsert(id, pw, name, age);
 					if (list != null) {
 						System.out.println("---- 등록결과 -----");
 						listPrn(list);
@@ -107,9 +107,9 @@ public class Ex01 {
 					idx = sc.next();
 
 					System.out.print("수정할 나이 : ");
-					m_age = sc.next();
+					age = sc.next();
 					
-					list = DAO.getInstance().getUpdate(idx, m_age);
+					list = DAO.getInstance().getUpdate(idx, age);
 					
 					if (list != null) {
 						System.out.println("----- 수정결과 -----");
@@ -121,14 +121,14 @@ public class Ex01 {
 					System.out.println("*** 로그인 ***");
 					
 					System.out.print("ID : ");
-					m_id = sc.next();
+					id = sc.next();
 
 					System.out.print("PASSWORD : ");
-					m_pw = sc.next();
+					pw = sc.next();
 					
 					System.out.println();
 					
-					list = DAO.getInstance().getLogIn(m_id, m_pw);
+					list = DAO.getInstance().getLogIn(id, pw);
 					
 					if (list.size() == 1) {
 						System.out.println("로그인 성공");
